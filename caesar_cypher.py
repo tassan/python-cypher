@@ -11,15 +11,11 @@ def generate_alphabet(uppercase=False):
     return letters
 
 def alphabet_lowercase():
-    letters = []
-    for letter in range(97,123):
-        letters.append(chr(letter))
+    letters = list(map(chr, range(97, 123)))
     return letters
 
 def alphabet_uppercase():
-    letters = []
-    for letter in range(65,91):
-        letters.append(chr(letter))
+    letters = list(map(chr, range(65, 91)))
     return letters
 
 
