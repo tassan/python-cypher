@@ -21,15 +21,12 @@ class BasicTestSuite(unittest.TestCase):
     def test_alphabet_lowercase(self):
         assert cypher.alphabet_lowercase() == ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-
     def test_alphabet_uppercase(self):
         assert cypher.alphabet_uppercase() == ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-
 
     def test_letter_position(self):
         alphabet = cypher.alphabet_uppercase()
         assert cypher.letter_position('A', alphabet) == 0
-
     
     def test_move_letter(self):
         """ 
@@ -41,14 +38,6 @@ class BasicTestSuite(unittest.TestCase):
         alphabet = []
         assert cypher.move_letter(letter, direction, n, alphabet) == 3
 
-    def test_rotate_letter(self):
-        letter = 'A'
-        direction = 'left'
-        n = 3
-        alphabet = cypher.alphabet_uppercase()
-        letter_rotate = cypher.rotate_letter(letter, direction, n, alphabet)
-        assert cypher.letter_position(letter, letter_rotate) == n
-
     def test_rotate_alphabet(self):
         alphabet = []
         direction = 'left'
@@ -58,7 +47,6 @@ class BasicTestSuite(unittest.TestCase):
     def test_cyphered_letter_position(self):
         assert cypher.cyphered_letter_position('A', rotated_alphabet) == 2
 
-
     def test_replace_special_character(self):
-        letter= 'Á'
+        letter  = 'Á'
         assert cypher.replace_special_character(letter) == 'A'

@@ -29,9 +29,6 @@ def move_letter(letter, direction, n, alphabet):
 def cyphered_letter_position(letter, rotated_alphabet):
     pass
 
-def rotate_letter(letter, direction, n, alphabet):
-    pass
-
 def rotate_alphabet(alphabet, direction, n):
     pass
 
