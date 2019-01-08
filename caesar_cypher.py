@@ -30,7 +30,7 @@ def cyphered_letter_position(letter, rotated_alphabet):
     pass
 
 def rotate_letter(letter, direction, n, alphabet):
-    return ['a']
+    pass
 
 def rotate_alphabet(alphabet, direction, n):
     pass
